@@ -1,1 +1,28 @@
+ class CashRegister
 
+attr_reader :discount
+attr_accessor :total
+
+    def initialize(discount=20)
+        @total = 0
+        @discount = discount
+        
+    end
+
+    def add_item(title, price, quantity=1)
+      @total += price
+    end
+
+    # def discount      setter equiv
+    #   @discount 
+    # end
+
+# def total= (input)
+#     @total = input
+#  end
+
+#  def total
+#   @total
+#  end
+
+end
